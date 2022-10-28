@@ -1,0 +1,22 @@
+java安装包不能放在中文目录下，不然会加载不出来。
+一路下一步就行
+
+
+配置java环境变量：
+右键“计算机”—“属性”—“高级系统配置”右键“计算机”—“属性”—“高级系统配置”需要新建两个环境变量，修改一个环境变量：
+（1）JAVA_HOME
+变量值填写JAVA安装的路径，我的是C:\Program Files\Java\jdk1.8.0_201（填jdk的）
+（2）CLASSPATH
+变量值填写 .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar
+（3）修改Path变量
+（如果是win10），path变量是分别添加的：
+C:\Program Files\Java\jdk1.8.0_201\bin
+C:\Program Files\Java\jre1.8.0_201\bin
+（视个人具体安装路径来填，一定要到bin）
+path 里面加这俩也行
+%JAVA_HOME%\bin
+%JAVA_HOME%\jre\bin不行啊，ctm的，让我一个小白饶了好久弯路。
+
+
+
+
